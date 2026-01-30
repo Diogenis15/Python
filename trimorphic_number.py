@@ -9,6 +9,29 @@ Reference: https://en.wikipedia.org/wiki/Automorphic_number#Trimorphic_numbers
 def is_trimorphic(number: int) -> bool:
     """
     Checks if a number is a Trimorphic number.
+
+    >>> is_trimorphic(0)
+    True
+    >>> is_trimorphic(1)
+    True
+    >>> is_trimorphic(4)
+    True
+    >>> is_trimorphic(5)
+    True
+    >>> is_trimorphic(24)
+    True
+    >>> is_trimorphic(249)
+    True
+    >>> is_trimorphic(2)
+    False
+    >>> is_trimorphic(7)
+    False
+    >>> is_trimorphic(10)
+    False
+    >>> is_trimorphic(-1)
+    Traceback (most recent call last):
+        ...
+    ValueError: Input must be a non-negative integer
     """
     if number < 0:
         raise ValueError("Input must be a non-negative integer")
