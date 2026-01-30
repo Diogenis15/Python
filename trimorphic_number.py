@@ -10,6 +10,10 @@ def is_trimorphic(number: int) -> bool:
     """
     Checks if a number is a Trimorphic number.
 
+    :param number: The number to check
+    :return: True if the number is trimorphic, False otherwise
+    :raises ValueError: If the input number is negative
+
     >>> is_trimorphic(0)
     True
     >>> is_trimorphic(1)
